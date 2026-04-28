@@ -1,6 +1,61 @@
+.hero-title {
+  font-size: 52px;
+  font-weight: bold;
+  margin-top: 20px;
+
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 20px rgba(255, 0, 204, 0.3);
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #cbd5f5;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
 .section p {
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto;
   color: #94a3b8;
+}
+
+/* ANIMATION */
+.hero {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .logo {
+    width: 100px;
+  }
 }
