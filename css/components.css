@@ -16,8 +16,24 @@
 }
 
 .btn-small {
-  width: fit-content;
-  margin: 15px auto 0;
+  margin-top: 15px;
+  padding: 8px 14px;
+
+  font-size: 13px;
+  border-radius: 6px;
+
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  align-self: center;
+}
+
+.btn-small:hover {
+  opacity: 0.85;
+  box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
 }
 
 .btn.primary {
