@@ -19,6 +19,8 @@ async function loadSection(id, file) {
 document.addEventListener("DOMContentLoaded", () => {
   loadSection("hero", "sections/hero.html");
   loadSection("about", "sections/about.html");
+  loadSection("skills", "sections/skills.html");
+  loadSection("projects", "sections/projects.html");
   loadSection("services", "sections/services.html");
   loadSection("contact", "sections/contact.html");
 });
