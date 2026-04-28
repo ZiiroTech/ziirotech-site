@@ -36,6 +36,10 @@ body {
   opacity: 0.8;
 }
 
+.section--narrow p {
+  opacity: 0.9;
+}
+
 .section:last-child {
   margin-top: 140px;
   padding-bottom: 100px;
