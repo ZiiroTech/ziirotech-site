@@ -73,3 +73,12 @@
 .skill:hover {
   border-color: #ff00cc;
 }
+
+.about-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.about-list li {
+  margin: 8px 0;
+}
