@@ -1,10 +1,11 @@
+/* LOGO */
 .logo {
   width: clamp(140px, 20vw, 260px);
   filter: drop-shadow(0 0 20px rgba(255, 0, 204, 0.4));
-  padding-bottom: 15px; 
+  margin-bottom: 20px;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn {
   display: inline-block;
   margin-top: 30px;
@@ -13,27 +14,6 @@
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
-}
-
-.btn-small {
-  margin-top: 15px;
-  padding: 8px 14px;
-
-  font-size: 13px;
-  border-radius: 6px;
-
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
-  color: white;
-  text-decoration: none;
-
-  transition: 0.3s;
-
-  align-self: center;
-}
-
-.btn-small:hover {
-  opacity: 0.85;
-  box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
 }
 
 .btn.primary {
@@ -47,34 +27,50 @@
   box-shadow: 0 0 35px rgba(255, 0, 204, 0.6);
 }
 
-/* CARDS */
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+/* SMALL BUTTON */
+.btn-small {
+  margin-top: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  text-decoration: none;
+
+  align-self: center;
+  transition: 0.3s;
 }
 
+.btn-small:hover {
+  opacity: 0.85;
+  box-shadow: 0 0 15px rgba(255, 0, 200, 0.3);
+}
+
+/* CARD */
 .card {
   background: rgba(15, 23, 42, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   backdrop-filter: blur(12px);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(51, 51, 255, 0.25);
+  border-color: #3333ff;
 }
 
 .card-body {
   flex-grow: 1;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(51, 51, 255, 0.25);
-  border-color: #3333ff;
 }
 
 .card h3 {
@@ -82,6 +78,23 @@
   font-size: 18px;
 }
 
+/* TAGS */
+.tags {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags span {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+}
+
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -98,13 +111,4 @@
 
 .skill:hover {
   border-color: #ff00cc;
-}
-
-.about-list {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.about-list li {
-  margin: 8px 0;
 }
