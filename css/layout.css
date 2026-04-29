@@ -1,8 +1,8 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background: radial-gradient(circle at top, #0f172a, #020617);
   color: white;
+  margin: 0;
 }
 
 .container {
@@ -11,61 +11,41 @@ body {
   padding: 40px 20px;
 }
 
+/* HERO */
 .hero {
   text-align: center;
-  padding: 0px 20px;
+  padding: 20px 20px;
 }
 
+/* SECTIONS */
 .section {
   margin-top: 120px;
   text-align: center;
 }
 
-.section--narrow {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.section h2 {
+  margin-bottom: 30px;
 }
 
-.section--wide {
-  max-width: 1100px;
+/* GRID SYSTEM */
+.grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
 }
 
-.section p {
-  max-width: 500px;
-  opacity: 0.8;
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.section--narrow p {
-  opacity: 0.9;
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.section:last-child {
-  margin-top: 140px;
-  padding-bottom: 100px;
-}
-
-.section:last-child .btn {
-  margin-top: 25px;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.tags {
-  margin-top: 15px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tags span {
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.06);
+@media (max-width: 600px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
